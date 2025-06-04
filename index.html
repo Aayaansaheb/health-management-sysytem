@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VNIT Health Management Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+        }
+
+        .login-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            gap: 2rem;
+            flex-wrap: wrap;
+            padding: 2rem;
+        }
+
+        form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .form-example {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.7rem;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .fit-picture {
+            display: block;
+            margin: 2rem auto 1rem auto;
+            max-height: 100px;
+        }
+
+        .fit-doctor {
+            width: 250px;
+            border-radius: 10px;
+        }
+
+        .flash-message {
+            text-align: center;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <img class="fit-picture" src="/static/logo.jpg" alt="VNIT Logo">
+
+
+    <div class="login-box">
+        <form action="/" method="post">
+            <div class="form-example">
+                <label for="student_id">Enter your ID:</label>
+                <input type="text" name="student_id" id="student_id" required />
+            </div>
+            <div class="form-example">
+                <label for="password">Enter your Password:</label>
+                <input type="password" name="password" id="password" required />
+            </div>
+            <div class="form-example">
+                <input type="submit" value="Login" />
+            </div>
+        </form>
+        <img class="fit-doctor" src="static/doctor.jpg" alt="Doctor Illustration">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-q4zXRgDk1mzY8S3E3DPSvFVtvXlM6+mJwOSL5g0OHK0gSXRHlvU1r7iRcxCJLa1t"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
