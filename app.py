@@ -6,9 +6,9 @@ app.secret_key = 'vnit_hms_secret'
 
 # MySQL DB Connection
 db = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="ronak123",
+    host="hostname",
+    user="username",
+    password="password",
     database="hms_vnit"
 )
 cursor = db.cursor(dictionary=True)
